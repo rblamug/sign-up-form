@@ -56,49 +56,67 @@ a {
     width: 85%;
 }
 
-.form-container div {
-    display: flex;
+.intro-container {
     flex: 1;
 }
 
-.intro-container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
 .intro {
-    display: flex;
     font-weight: bold;
     font-size: 1.3em;
     padding: 1.5rem;
 }
 
-.intro-container p:last-child {
-    padding-top: 0;
-    padding-bottom: 3rem;
-}
 
 .actual-form {
     display: flex;
     flex-direction: column;
+    flex: 2;
 }
 
 .actual-form p {
     width: 100%;
+    font-size: 1.3em;
+    padding: 0.8rem 1.5rem;
 }
 
 .form-row {
+    display: flex;
     flex-direction: row;
     flex: 1;
 }
 
 .form-column {
+    display: flex;
     flex-direction: column;
     flex: 1;
+    gap: 1.8rem;
+}
+
+label {
+    padding: 0 2rem;
+}
+
+input {
+    margin: 0 2rem;
+    height: 1.5rem;
 }
 
 .form-column div {
+    display: flex;
     flex-direction: column;
+}
+
+.submit-container {
+    display: flex;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+button {
+    align-self: center;
 }
