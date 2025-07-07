@@ -1,9 +1,17 @@
 div {
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 * {
     margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: whitesmoke;
 }
 
 .container {
@@ -57,13 +65,20 @@ a {
 }
 
 .intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     flex: 1;
 }
 
 .intro {
     font-weight: bold;
     font-size: 1.3em;
-    padding: 1.5rem;
+    padding: 4rem 2rem 2rem;
+}
+
+.intro:last-child {
+    padding-top: 0;
 }
 
 
@@ -76,7 +91,7 @@ a {
 .actual-form p {
     width: 100%;
     font-size: 1.3em;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 2rem;
 }
 
 .form-row {
@@ -109,6 +124,7 @@ input {
 .submit-container {
     display: flex;
     flex: 1;
+    flex-direction: column;
 }
 
 form {
@@ -117,6 +133,11 @@ form {
     flex-direction: column;
 }
 
+.submit-container div {
+    padding: 2rem 2rem;
+}
+
 button {
-    align-self: center;
+    align-self: flex-start;
+    padding: 0.8rem 3rem;
 }
